@@ -364,7 +364,7 @@ body {
 }
 
 /* some shits */
-.logo { width: 50px; }
+.logo { width: 50px; margin-top: -11px; }
 .logo-label { font-size: 30px; }
 .logo-mini { width: 42px; }
 
