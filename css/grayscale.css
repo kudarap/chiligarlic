@@ -8,8 +8,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto Slab', serif;
-    color: #fff;
-    background-color: #000;
+    color: #eee;
+    background-color: #0C0C0C;
 }
 
 html {
@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #0C0C0C;
 }
 
 .navbar-custom .navbar-brand {
@@ -123,7 +123,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #0C0C0C;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -139,7 +139,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: url(https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfa1/t1.0-9/10174942_752243348154228_2864495129027792426_n.jpg) no-repeat top center scroll;
-    background-color: #000;
+    background-color: #0C0C0C;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -157,7 +157,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    text-shadow: 1px 1px 1px #444;
+    text-shadow: 1px 1px 1px #141414;
 }
 
 @media(min-width:767px) {
@@ -257,12 +257,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../img/tile.png);
+    background-color: #979797;
 }
 
 #map {
@@ -305,7 +301,7 @@ a:focus {
 .btn-default:focus {
     border: 1px solid #FF3A3A;
     outline: 0;
-    color: #000;
+    color: #0C0C0C;
     background-color: #FF3A3A;
 }
 

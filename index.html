@@ -30,6 +30,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Anal -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,$
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53683442-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -111,8 +121,7 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Team</h2>
-                    <p>We will place our selfies here, and some details</p>
-                    <a href="#" class="btn btn-default btn-lg">Check us somewhere</a>
+                    <p>We will place our selfies here, and some info.</p>
                 </div>
             </div>
         </div>
@@ -122,22 +131,27 @@
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Join us and<span class="chili-red">/</span>or Get us a good project?</h2>
+                <h2>Join us and <span class="chili-red">/</span> or Get us a Cool project?</h2>
                 <p>feel free to share your weird, great, evil, and fun ideas and put it on live!</p>
                 <p><a href="mailto:dev@chiligarlic.com">dev@chiligarlic.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://www.facebook.com/chiligarlicdev" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Like us</span></a>
-                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                        <a href="https://www.facebook.com/chiligarlicdev" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a><br />
                     </li>
                 </ul>
+                <br />
+                <div class="fb-like-holder">
+                    <div class="fb-like" data-href="https://www.facebook.com/chiligarlicdev" data-width="400" data-layout="standard" data-action="like" data-show-faces="true" data-share="false" data-colorscheme="dark"></div>
+                    <div class="fake-fb-like"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Map Section -->
     <!-- Footer -->
+    <br /><br /><br />
     <footer>
         <div class="container text-center">
             <p><small>Copyright &copy; Chiligarlic 2014</small></p>
@@ -159,14 +173,6 @@
     <div id="fb-root"></div>
     <script>
         // fb shit
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '530910757009803',
-                xfbml      : true,
-                version    : 'v2.0'
-            });
-        };
-
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
