@@ -390,3 +390,12 @@ body {
 .team-thumbs {
 
 }
+
+/* preload some shits */
+body:after {
+    display: none;
+    content: 
+        url(../img/cover/1.jpg) 
+        url(../img/cover/2.jpg) 
+        url(../img/cover/3.jpg);
+}
