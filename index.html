@@ -183,6 +183,13 @@
         var bgType = '.jpg';
         var bgImages = ['1', '2', '3'];
 
+        // preload images
+        var preloadContent = 'url(' + bgPath + 
+            bgImages.join(bgType + ') ' + 'url(' + bgPath) + bgType + ')';
+        
+        console.log(preloadContent);
+        $('body:after').css({display: 'none', content: preloadContent});
+
         var bgChange = function (elem, images) {
             index = Math.floor(Math.random() * images.length);
             image = bgPath + images[index] + bgType;
