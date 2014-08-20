@@ -178,22 +178,19 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
 
+        // add image cover on css header:after
+        var bgImages = window.getComputedStyle(
+            document.querySelector('header'), ':after').
+                getPropertyValue('content').split(' ');
+
         // bg changer
-        var bgPath = '../img/cover/';
-        var bgType = '.jpg';
-        var bgImages = ['1', '2', '3'];
-
-        // preload images on the css for good
-
         var bgChange = function (elem, images) {
             index = Math.floor(Math.random() * images.length);
-            image = bgPath + images[index] + bgType;
-
             if(!index || index == 'undefined') {
-                image = elem[0];
+                image = images[0];
             }
-            
-            elem.css('background-image', 'url(' + image + ')');
+
+            elem.css('background-image', images[index]);
         }
 
         setInterval(function () {

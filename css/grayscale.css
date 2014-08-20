@@ -391,8 +391,8 @@ body {
 
 }
 
-/* preload some shits */
-body:after {
+/* preload some shits add your cover here */
+header:after {
     display: none;
     content: 
         url(../img/cover/1.jpg) 
