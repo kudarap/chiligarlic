@@ -138,12 +138,17 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/cover/1.jpg) no-repeat center center scroll;
+    background-image: url(../img/cover/1.jpg);
     background-color: #0C0C0C;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
 }
 
 .intro .intro-body {
