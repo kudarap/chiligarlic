@@ -187,7 +187,6 @@
         var preloadContent = 'url(' + bgPath + 
             bgImages.join(bgType + ') ' + 'url(' + bgPath) + bgType + ')';
         
-        console.log(preloadContent);
         $('body:after').css({display: 'none', content: preloadContent});
 
         var bgChange = function (elem, images) {
