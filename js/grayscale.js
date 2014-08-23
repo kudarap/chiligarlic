@@ -33,3 +33,23 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+// add image cover on css header:after
+var bgImages = window.getComputedStyle(
+    document.querySelector('header'), ':after').
+        getPropertyValue('content').split(' ');
+
+// bg changer
+var bgChange = function (elem, images) {
+    index = Math.floor(Math.random() * images.length);
+    if(!index || index == 'undefined') {
+        image = images[0];
+    }
+
+    elem.css('background-image', images[index]);
+}
+
+// bg change every 3 secs randomly
+setInterval(function () {
+    bgChange($('.intro'), bgImages);
+}, 3000);
