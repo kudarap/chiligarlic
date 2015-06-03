@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto Slab', serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #eee;
     background-color: #0C0C0C;
 }
@@ -25,6 +25,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
+    /*font-family: 'Roboto Slab', serif;*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -49,6 +50,10 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+small {
+    font-size: 12px;
 }
 
 a:hover,
@@ -143,6 +148,7 @@ a:focus {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    box-shadow: 0 10px 40px black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -163,6 +169,8 @@ a:focus {
 .intro .intro-body .intro-text {
     font-size: 18px;
     text-shadow: 1px 1px 1px #141414;
+    color: #eee;
+    line-height: 50px;
 }
 
 @media(min-width:767px) {
@@ -274,7 +282,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -372,12 +380,12 @@ body {
 }
 
 /* some shits */
-.logo { width: 50px; margin-top: -11px; }
-.logo-mini { width: 42px; }
-.logo-label { font-size: 30px; }
+.logo { width: 50px; margin-top: -13px; }
+.logo-mini { width: 40px; }
+.logo-label { font-size: 30px; text-transform: none;}
 
-.chili-red { color: #FF3A3A; }
-.chili-red-bg { background: #FF3A3A; }
+.chili-red { color: #F44336; }
+.chili-red-bg { background: #F44336; box-shadow: 0 10px 20px black; }
 
 .dimmer { 
     position: absolute;
@@ -388,7 +396,7 @@ body {
 }
 
 .fine-text {
-    font-size: 50%;
+    /*font-size: 50%;*/
 }
 
 .team-box {
@@ -434,4 +442,11 @@ header:after {
 
 .dark-tile-bg {
     background: #292929 url(../img/tile.png);
+}
+
+.bitch {
+    text-transform: uppercase;
+    color: white;
+    /*font-weight: bold;*/
+    border-bottom: 2px solid #F44336;
 }
