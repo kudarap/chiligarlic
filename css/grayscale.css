@@ -132,7 +132,7 @@ a:focus {
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(106, 106, 106, 0.34);
     }
 }
 
@@ -380,12 +380,12 @@ body {
 }
 
 /* some shits */
-.logo { width: 50px; margin-top: -13px; }
+.logo { width: 50px; margin-top: -7px; }
 .logo-mini { width: 40px; }
 .logo-label { font-size: 30px; text-transform: none;}
 
 .chili-red { color: #FF5252; }
-.chili-red-bg { background: #F44336; box-shadow: 0 10px 20px black; }
+.chili-red-bg { background: rgba(0, 0, 0, 0.63); box-shadow: 0 10px 20px black; }
 
 .dimmer { 
     position: absolute;
