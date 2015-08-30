@@ -384,7 +384,7 @@ body {
 .logo-mini { width: 40px; }
 .logo-label { font-size: 30px; text-transform: none;}
 
-.chili-red { color: #FF5252; }
+.chili-red { color: #D90A22; }
 .chili-red-bg { background: rgba(0, 0, 0, 0.63); box-shadow: 0 10px 20px black; }
 
 .dimmer { 
@@ -446,5 +446,5 @@ header:after {
 
 .bitch {
     text-transform: uppercase;
-    color: #FF8A80;
+    color: #A0081A;
 }
