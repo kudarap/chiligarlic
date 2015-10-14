@@ -435,9 +435,9 @@ body {
 header:after {
     display: none;
     content: 
-        url(../img/cover/1.jpg) 
-        url(../img/cover/2.jpg) 
-        url(../img/cover/3.jpg);
+        url(http://d3sjp5io2xp26u.cloudfront.net/cover/1.jpg) 
+        url(http://d3sjp5io2xp26u.cloudfront.net/cover/2.jpg) 
+        url(http://d3sjp5io2xp26u.cloudfront.net/cover/3.jpg);
 }
 
 .dark-tile-bg {
