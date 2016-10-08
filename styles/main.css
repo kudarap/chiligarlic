@@ -33,8 +33,8 @@ div.container img.logo {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray; /* IE6-9 */
-    -webkit-transition: transform 1s, filter 2s; /* Safari */
-    transition: transform 1s, filter 2s;
+    -webkit-transition: transform 1s, filter 3s; /* Safari */
+    transition: transform 1s, filter 3s;
 
     -ms-transform: rotate(60deg); /* IE 9 */
     -webkit-transform: rotate(60deg); /* Chrome, Safari, Opera */
@@ -126,6 +126,7 @@ div.container div.foot {
 }
 div.container div.foot a:hover {
     border-bottom: 1px #FF5252 solid;
+    border-color: inherit;
 }
 div.container div.foot div.left {
     float: left;
@@ -135,4 +136,7 @@ div.container div.foot div.right {
 }
 div.container div.foot div.right p {
   text-align: right;
+}
+div.container div.foot div.right a {
+  color: inherit;
 }
