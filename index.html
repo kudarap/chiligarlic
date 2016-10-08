@@ -10,13 +10,13 @@
 
     <!-- social -->
     <title>Chiligarlic Dev</title>
-    <meta name="descripton" content="Initiative of ninjas that helps non-tech and devs build their own apps reality.">
+    <meta name="descripton" content="Initiative of ninjas that helps non-tech and devs build their own apps to reality.">
 
     <meta property="og:image" content="https://www.chiligarlic.com/img/share.jpg">
     <meta property="og:url" content="https://www.chiligarlic.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chiligarlic Dev">
-    <meta property="og:description" content="Initiative of ninjas that helps non-tech and devs build their own apps reality.">
+    <meta property="og:description" content="Initiative of ninjas that helps non-tech and devs build their own apps to reality.">
 
     <!-- iOS Smart App Banners : to be removed 12/15 -->
     <meta name="apple-itunes-app" content="app-id=535886823, app-argument=http://chiligarlic.com">
@@ -27,31 +27,22 @@
 
     <!-- Theme Color for Android Lollipop -->
     <meta name="theme-color" content="#333333">
-
-    <!-- components -->
-
-    <!-- GTM -->
-    <script>
-      dataLayer = [];
-    </script>
-    <!-- prefetch and cache result -->
-
   </head>
   <body>
     <div class="container">
-      <div class="head">
+      <div id="head">
         <h1>
           <img class="logo" src="img/logo.png" />
           <a href="/">Chiligarlic Dev</a></h1>
         <br /><br />
         <div class="nav">
-          <a href="#">Project</a>
-          <a href="#">Experiment</a>
-          <a href="#">Technologies</a>
-          <a href="#">About</a>
+          <a href="./project">Project</a>
+          <a href="./experiment">Experiment</a>
+          <a href="./technologies">Technologies</a>
+          <a href="./about">About</a>
         </div>
       </div>
-      <div class="content">
+      <div id="content">
         <div class="banner">
           Hello Real World <span class="blink">_</span>
         </div>
@@ -66,7 +57,7 @@
           </div>
         </div>
       </div>
-      <div class="foot">
+      <div id="foot">
         <div class="left">
           <p>
             Chiligarlic Dev is a showcase of our live projects and experiments using edge technologies
@@ -87,6 +78,8 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hogan.js/2.0.0/hogan.js"></script>
+    <script type="text/javascript" src="scripts/page.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

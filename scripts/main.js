@@ -15,3 +15,55 @@ ga('send', 'pageview');
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+// pages
+(function() {
+  var pages = [
+    '/index',
+    '/project',
+    '/experiment',
+    '/technologies',
+    '/about',
+  ];
+
+  page('*', handler);
+  page({ hashbang: true });
+
+  function getFile(f, cb) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        cb(this.responseText)
+      }
+    };
+
+    xhttp.open('GET', f, true);
+    xhttp.send();
+  }
+
+  function setContent(p) {
+    p = 'pages' + p + '.html';
+    getFile(p, function(t) {
+      document.getElementById('content').innerHTML = t;
+    });
+  }
+
+  function index() {
+    setContent('index');
+  }
+
+  function handler(ctx) {
+    // default
+    var c = '/404';
+    var index = '/index';
+    var path = ctx.path;
+
+    if (path == '/') {
+      c = index;
+    } else if (pages.indexOf(path) !== -1) {
+      c = path;
+    }
+
+    setContent(c);
+  }
+})();
