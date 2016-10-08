@@ -24,6 +24,7 @@ ga('send', 'pageview');
     '/experiment',
     '/technologies',
     '/about',
+    '/policies',
   ];
 
   page('*', handler);
