@@ -119,6 +119,9 @@ div.container div.foot {
     line-height: 30px;
     color: #888;
 }
+div.container div.foot div.fb-like {
+  text-align: center;
+}
 div.container div.foot a:hover {
     border-bottom: 1px #FF5252 solid;
 }
