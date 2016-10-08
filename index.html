@@ -1,229 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="chiligarlic, idea, non-developers, devs, application, is an idea, sake of humanity or fun, develop, create, php, node, js, css, html, technology, innovation, sql, no sql, android, ios, mobile, web, chiligarlicdev">
-    <meta name="description" content="Chiligarlic is an idea that helps non-developers and devs build their own application from their ideas for the sake of humanity or fun.">
-    <meta name="author" content="chiligarlic">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
-    <title>Chiligarlic | Its an idea</title>
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300|Lato:100|Source+Code+Pro:300,400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/main.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- social -->
+    <title>Chiligarlic Dev</title>
+    <meta name="descripton" content="Initiative of ninjas that helps non-tech and devs build their own apps reality.">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <meta name="twitter:image:src" content="https://www.chiligarlic.com/img/share/cx600.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Chiligarlic">
+    <meta name="twitter:title" content="Chiligarlic Dev">
+    <meta name="twitter:description" content="Initiative of ninjas that helps non-tech and devs build their own apps reality.">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <meta property="og:image" content="https://www.chiligarlic.com/img/share/cx600.jpg">
+    <meta property="og:url" content="https://www.chiligarlic.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Chiligarlic Dev">
+    <meta property="og:description" content="Initiative of ninjas that helps non-tech and devs build their own apps reality.">
 
-    <!-- FavIcon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- iOS Smart App Banners : to be removed 12/15 -->
+    <meta name="apple-itunes-app" content="app-id=535886823, app-argument=http://chiligarlic.com">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+    <!-- Polymer -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="dark-tile-bg">
+    <link rel="icon" href="/img/favicons/16x16.png" sizes="16x16">
+    <link rel="icon" href="/img/favicons/32x32.png" sizes="32x32">
+    <link rel="icon" href="/img/favicons/64x64.png" sizes="64x64">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/logo.png" class="logo" />
-                    <span class="logo-label light">
-                        <span class="chili-red">C</span>hili<span class="chili-red">G</span>arlic <sup><small>Developers</small></sup>
-                    </span>
-                </a>
-            </div>
+    <!-- Theme Color for Android Lollipop -->
+    <meta name="theme-color" content="#333333">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#stuffs">Cool Stuffs</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Get us</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <!-- components -->
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="dimmer"></div>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">ITS AN <span class="chili-red">IDEA</span></h1>
-                        <p class="intro-text">
-                            <span class="bitch">Initiative</span> of ninjas that helps <span class="bitch">non</span>-developers and developers 
-                            <span class="bitch">build</span> their own apps from their <br />
-                            <span class="bitch">imagination</span> to <span class="bitch">reality</span>.
-                        </p>
-                        <br />
-                        <br />
-                        <!-- <a href="#stuffs" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a> -->
-                         <!-- <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fchiligarlicdev&amp;width&amp;layout=button&amp;action=like&amp;colorscheme=dark&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=530910757009803" scrolling="no" frameborder="0" style="width:47px; border:none; overflow:hidden; height: 20px;background: #000;position: absolute;border-radius: 2px;box-shadow: 1px 1px 1px #0C0C0C;margin: 30px -58px;" allowTransparency="true"></iframe> -->
-                        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fchiligarlicdev&amp;width&amp;layout=standard&amp;action=like&amp;colorscheme=dark&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=530910757009803" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:58px;" allowTransparency="true"></iframe>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Stuffs Section -->
-    <section id="stuffs" class="container content-section text-center" hidden>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Cool Stuffs</h2>
-                <p>We will place all stuffs here prototypes, experimentals, products, real working project and somethings.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="content-section text-center" hidden>
-        <div class="download-section">
-            <div class="container">
-                <div class="row">
-                    <h2>We are</h2>
-                    <p>Professionals and fucking awesome.</p>
-                    <ul class="list-inline">
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="team-box">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs" style="background-image: url(../img/team/yeng.jpg)">
-                            <div class="overlay">
-                                <p>Yeng</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs" style="background-image: url(../img/team/jv.jpg)">
-                            <div class="overlay">
-                                <p>Jv</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs" style="background-image: url(../img/team/jervy.jpg)">
-                            <div class="overlay">
-                                <p>Jervy</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs">
-                            <div class="overlay">
-                                <p>Default</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs">
-                            <div class="overlay">
-                                <p>Default</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 thumbs">
-                            <div class="overlay">
-                                <p>Default</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center" hidden>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Join us and <span class="chili-red">/</span> or Get us a Cool project?</h2>
-                <p>feel free to share your weird, great, evil, good, or fun ideas and put it on live!</p>
-                <p><a href="mailto:dev@chiligarlic.com">dev@chiligarlic.com</a></p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.facebook.com/chiligarlicdev" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="mailto:dev@chiligarlic.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i></a><br />
-                    </li>
-                </ul>
-                <br />
-                <div class="fb-like-holder">
-                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fchiligarlicdev&amp;width&amp;layout=standard&amp;action=like&amp;colorscheme=dark&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=530910757009803" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:58px;" allowTransparency="true"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <!-- Footer -->
-    <!-- <br /><br /><br /> -->
-    <footer>
-        <div class="container text-center">
-            <p>
-                <small class="fine-text">Copyright &copy; <span class="chili-red">Chiligarlic</span> 2K15</small>
-                | <small class="fine-text"><span class="chili-red">dev</span>@chiligarlic.com</small>
-            </p>
-        </div>
-    </footer>
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <!-- Google Anal -->
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-
+    <!-- GTM -->
     <script>
-        // google-analytics
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-53683442-1', 'auto');
-        ga('send', 'pageview');
-
-        // fb shits
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      dataLayer = [];
     </script>
-</body>
+    <!-- prefetch and cache result -->
 
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>
+          <img class="logo" src="/img/logo.png" />
+          <a href="#">Chiligarlic Dev</a></h1>
+        <br /><br />
+        <div class="nav">
+          <a href="#">Project</a>
+          <a href="#">Experiment</a>
+          <a href="#">Technologies</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+      <div class="content">
+
+      </div>
+      <div class="foot">
+        <div class="left">
+          <p>
+            Chiligarlic Dev is a showcase of our live projects and experiments using edge technologies
+          </p>
+          <p>
+            <a href="#">Blog</a> |
+            <a href="#">Contact</a> |
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            <img class="logo" src="/img/logo.png" />
+          </p>
+          <p>
+            <a href="#">Privacy &amp; Terms</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

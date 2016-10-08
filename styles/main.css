@@ -1,0 +1,115 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    background: #0d0d0d;
+    color: white;
+    font-family: "Source Code Pro", "monaco", "PT Mono", "Courier", monospace;
+    font-size: 14px;
+    color: #cecece;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+div.container > div {
+    padding: 40px 80px;
+}
+div.container a {
+    color: #FF5252;
+    text-decoration: none;
+}
+div.container img.logo {
+    width: 30px;
+    margin: 0 0 -5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-transition: transform 1s, filter 2s; /* Safari */
+    transition: transform 1s, filter 2s;
+
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Chrome, Safari, Opera */
+}
+div.container img.logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -ms-transform: rotate(2130deg); /* IE 9 */
+    -webkit-transform: rotate(2130deg); /* Chrome, Safari, Opera */
+}
+
+/* HEAD */
+div.container div.head h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #CECECE;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #CECECE;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+div.container div.head h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+div.container div.head div.nav {
+    font-family: "Source Code Pro", "monaco", "PT Mono", "Courier", monospace;
+    color: #cecece;
+}
+div.container div.head div.nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+div.container div.head div.nav a:hover {
+    border-bottom: 1px rgba(255,255,255,0.75) solid;
+}
+
+
+/* CONTENT */
+div.container div.content {
+}
+
+
+/* FOOT */
+div.container div.foot {
+    padding-top: 80px;
+    margin-top: 100px;
+    min-height: 200px;
+    display: block;
+    background: #1a1a1a;
+    font-size: 12px;
+    line-height: 30px;
+    color: #888;
+}
+div.container div.foot a:hover {
+    border-bottom: 1px #FF5252 solid;
+}
+div.container div.foot div.left {
+    float: left;
+}
+div.container div.foot div.right {
+  float: right;
+}
+div.container div.foot div.right p {
+  text-align: right;
+}
