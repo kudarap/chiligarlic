@@ -46,8 +46,8 @@ div.container img.logo:hover {
     -webkit-transform: rotate(2130deg); /* Chrome, Safari, Opera */
 }
 div.container .blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
 }
 @keyframes blink-animation {
     to {
@@ -73,17 +73,16 @@ div#head h1 {
     letter-spacing: 1px;
     line-height: 24px;
 }
-div#head h1 a,
-div#head h1 a.active  {
+div#head h1 a {
   color: inherit;
   text-decoration: none;
 }
 
-div#head div.nav {
+div#head div#nav {
     font-family: "Source Code Pro", "monaco", "PT Mono", "Courier", monospace;
     color: #cecece;
 }
-div#head div.nav a {
+div#head div#nav a {
     color: inherit;
     text-decoration: none;
     margin-right: 10px;
@@ -95,7 +94,8 @@ div#head div.nav a {
     text-decoration: none;
     text-transform: uppercase;
 }
-div#head div.nav a:hover {
+div#head div#nav a:hover,
+div#head div#nav a.active {
     border-bottom: 1px rgba(255,255,255,0.75) solid;
 }
 

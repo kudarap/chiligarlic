@@ -43,14 +43,24 @@ ga('send', 'pageview');
   }
 
   function setContent(p) {
-    p = 'pages' + p + '.html';
+    var p = 'pages' + p + '.html';
     getFile(p, function(t) {
       document.getElementById('content').innerHTML = t;
     });
   }
 
-  function index() {
-    setContent('index');
+  function setNav(c) {
+    var n = document.querySelectorAll("div#nav a");
+
+    for (var i = 0; i < n.length; i++) {
+      if (n[i].getAttribute('href') == '.' + c) {
+        n[i].className = 'active';
+
+        continue;
+      }
+
+      n[i].className = '';
+    }
   }
 
   function handler(ctx) {
@@ -63,6 +73,7 @@ ga('send', 'pageview');
       c = index;
     } else if (pages.indexOf(path) !== -1) {
       c = path;
+      setNav(path)
     }
 
     setContent(c);
