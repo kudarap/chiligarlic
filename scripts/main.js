@@ -71,6 +71,7 @@ ga('send', 'pageview');
 
     if (path == '/') {
       c = index;
+      setNav(c)
     } else if (pages.indexOf(path) !== -1) {
       c = path;
       setNav(path)
