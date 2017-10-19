@@ -105,6 +105,7 @@ div#head div#nav a.active {
 
 /* CONTENT */
 div#content {
+    min-height: 300px;
 }
 div#content div.banner {
   text-align: center;
@@ -150,9 +151,9 @@ div#content div.list div.item {
   margin: 20px 0 0;
   display: inline-block;
   width: 100%;
+  font-size: 14px;
 }
 div#content div.list div.item h4 {
-  
 }
 div#content div.list div.item p {
 
